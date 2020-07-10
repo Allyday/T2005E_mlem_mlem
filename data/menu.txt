@@ -1,0 +1,19 @@
+1. PIZZA COLORS
+imageLink: https://demo.myherothemes.com/burgy/wp-content/uploads/sites/22/2015/06/pizza1.jpg
+ingredients: Chicken, tomatoes, black olives, ham, pepperoni, cheese, onions.
+
+2. BURGER RETRO
+imageLink: https://demo.myherothemes.com/burgy/wp-content/uploads/sites/22/2015/06/burger4.jpg
+ingredients: Beef meat, spicy sauce, onion, cheese, corn, tomatoes, bread, ketchup
+
+3. HOT DOG
+imageLink: https://demo.myherothemes.com/burgy/wp-content/uploads/sites/22/2015/05/hotdog.jpg
+ingredients: Bread, sauce, frankfurter
+
+4. SANDWICH TORTILLA
+imageLink: https://demo.myherothemes.com/burgy/wp-content/uploads/sites/22/2015/06/sandwich-with-veg-bacon.jpg
+ingredients: Bread, salad, tomatoes, pineapple, bacon
+
+5. EGGS & HAM
+imageLink: https://demo.myherothemes.com/burgy/wp-content/uploads/sites/22/2015/06/sandwich-with-eggs-and-ham.jpg
+ingredients: Bread, ham, eggs, sauce
