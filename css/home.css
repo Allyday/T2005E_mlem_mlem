@@ -3,10 +3,54 @@ body {
   margin: 0;
 }
 
+#white-bit {
+  z-index: -1;
+  background-color: white;
+  width: 100%;
+  height: 1300px;
+  position: absolute;
+  margin-left: calc(600px - 50%);
+  margin-top: -120px;
+  padding-top: 170px;
+}
+
+.body {
+  width: 1200px;
+  /* căn giữa */
+  float: none;
+  margin: auto;
+}
+
 #landing {
   background-image: url("../data/images/burger-header.jpg");
   background-size: cover;
-  width: 92%;
-  height: 845px;
-  margin: 0 4%;
+  height: 990px;
+  float: none;
+  margin: auto;
+}
+
+h1#intro-title {
+  color: #d3312a;
+  width: 70%;
+  margin: 0 auto 10px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+#intro-content {
+  color: #888;
+  font-weight: 300;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.sans-serif {
+  font-family: Oswald;
+}
+
+.serif {
+  font-family: Merriweather;
 }
