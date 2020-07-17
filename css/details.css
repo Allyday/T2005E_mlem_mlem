@@ -17,7 +17,7 @@ body{
     padding: 100px 0;
 }
 .detail-container{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
 }
 .detail{
@@ -26,6 +26,13 @@ body{
     width: 100%;
     margin-bottom: 80px;
 }
+.detail::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
 .detail .colum-right{
     float: left;
     width: 50%;
@@ -115,9 +122,284 @@ img{
     text-decoration: none;
     text-align: center;
     padding-top: 5px;
+    z-index: 3;
 }
 
-.btn{
+.box-button .btn{
+    position: relative;
+    display: block;
+    color: #fdf9f9;
+    overflow: hidden;
+    padding: 12px 30px;
+    z-index: 1;
+}
+.box-button .btn::before{
+    color: #fdf9f9;
+    background: black;
+    content: "";
+    width: 100%;
+    height: 0%;
+    transition: all .6s ease;
+    position: absolute;
+    top: 0%; /* 50% */
+    left: 0%; /* 50% */
+    /*transform: translate(-50%,-50%);*/
+    border-radius: 0 0 50% 50%;
+    z-index: -1;
+}
+.box-button .btn:hover::before{
+    height: 200%;
+}
+
+.tabs{
+    float: left;
+    width: 100%;
+}
+.tabs::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.tabs .option-tabs {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+}
+.tabs .option-tabs ul{
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+.tab-button{
+    float: left;
+    padding: 5px 20px;
+    margin-right: 10px;
+    color: #fff;
+    background-color:#a41a13 ;
+    border: 1px solid #e2e2e2;
+    transition: all ease .6s;
+}
+.tab-button:hover{
+    border-top: 1px solid #a41a13 ;
+    border-bottom: 0px;
+    color: #242424;
+    background-color:#fff;
+
+}
+.detail-tabs{
+    width: 100%;
+    float: left;
+    border: 1px solid #e2e2e2;
+    border-top: 0px;
+}
+/*.detail-tabs1 , .detail-tabs2, .detail-tabs3{*/
+/*    width: 100%;*/
+/*    float: left;*/
+/*    padding: 60px 40px;*/
+/*    !*color: #555555;*!*/
+/*    font-size: 20px;*/
+/*}*/
+.detail-tabs2, .detail-tabs1{
+    display: none;
+}
+
+.detail-tabs3{
+    width: 100%;
+    float: left;
+    padding: 50px;
+}
+.detail-tabs3 p{
+    color: #6c757d;
+}
+.detail-tabs3 h2{
+    width: 100%;
+    float: left;
+}
+.comment{
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+    /*position: relative;*/
+    height: auto;
+}
+.comment .img{
+    width: 10%;
+    float: left;
+}
+.comment .text-comment{
+    float: right;
+    width: 90%;
+    border:1px solid #e2e2e2;
+    padding: 15px 20px;
+}
+.comment .text-comment h4{
+    width: 60%;
+    float: left;
+
+}
+
+.comment .text-comment p{
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+}
+.icon-star .fas{
+    float: right;
+    margin-left: 5px;
+    color: #a41a13;
+}
+
+
+.form-input{
+    margin-top: 50px;
+    float: left;
+    width: 100%;
+}
+.form-input::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.form-input .title-form{
+    float: left;
+    width: 100%;
+    border-bottom:1px solid #e2e2e2;
+}
+.form-input .title-form h2 {
+    max-width: 30%;
+    float: left;
+    /*border-bottom:2px solid #ff253a;*/
+    word-spacing: 3px;
+    padding-bottom: 10px;
+}
+.form-input .box-rating{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.form-input .box-rating span{
+    width: 100%;
+    float: left;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.form-input .box-rating .a{
+    color: rgba(157, 159, 161, 0.5);
+    padding-right: 15px;
+    border-right:1px solid #e2e2e2;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.form-input .box-rating .a1{
+    border: none;
+    z-index: 2;
+}
+.form-input .box-rating .a:hover{
+    color: #a41a13;
+}
+
+.form-input .box-name{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.form-input .box-name .first-name{
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+}
+.form-input .box-name .first-name label{
+    float: left;
+    width: 100%;
+    color: #6c757d;
+}
+.form-input .box-name .first-name input{
+    float: left;
+    width: 100%;
+    border: 1px solid #b8b0b0;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.form-input .box-name .last-name{
+    width: 50%;
+    float: right;
+    padding-left: 15px;
+}
+.form-input .box-name .last-name label{
+    float: left;
+    width: 100%;
+    color: #6c757d;
+}
+.form-input .box-name .last-name input{
+    float: left;
+    width: 100%;
+    border: 1px solid #b8b0b0;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.form-input .email{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.form-input .email label{
+    float: left;
+    width: 100%;
+    color: #6c757d;
+}
+.form-input .email input{
+    float: left;
+    width: 100%;
+    border: 1px solid #b8b0b0;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.form-input .comment{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.form-input .comment label{
+    float: left;
+    width: 100%;
+    color: #6c757d;
+}
+.form-input .comment textarea{
+    float: left;
+    width: 100%;
+    border: 1px solid #b8b0b0;
+    /*height: 100px;*/
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+.form-input .form-button{
+    margin-top: 30px;
+    float: left;
+    width: 20%;
+    /*height: 40px;*/
+    background: #a41a13;
+    z-index: -2;
+}
+.form-input .form-button a{
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    /*padding-top: 5px;*/
+}
+
+.form-input .form-button .btn{
     position: relative;
     display: block;
     color: #fdf9f9;
@@ -126,13 +408,13 @@ img{
     padding: 12px 30px;
     z-index: 1;
 }
-.btn::before{
+.form-input .form-button .btn::before{
     color: #fdf9f9;
     background: black;
     content: "";
     width: 100%;
     height: 0%;
-    transition: all 1s ease;
+    transition: all .4s ease;
     position: absolute;
     top: 0%; /* 50% */
     left: 0%; /* 50% */
@@ -140,9 +422,7 @@ img{
     border-radius: 0 0 50% 50%;
     z-index: -1;
 }
-.btn:hover::before{
-    height: 200%;
+.form-input .form-button .btn:hover::before{
+    height: 200%; /* 200% */
 }
-
-
 
