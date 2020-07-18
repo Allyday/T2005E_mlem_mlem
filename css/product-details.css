@@ -165,6 +165,7 @@ body{
     list-style: none;
     width: 100%;
     float: left;
+    margin-bottom: -1px;
 }
 .tab-button{
     float: left;
@@ -173,11 +174,11 @@ body{
     color: #fff;
     background-color:#a41a13 ;
     border: 1px solid #e2e2e2;
+    border-bottom: 0px;
     transition: all ease .6s;
 }
 .tab-button:hover{
     border-top: 1px solid #a41a13 ;
-    border-bottom: 0px;
     color: #242424;
     background-color:#fff;
 }
@@ -187,13 +188,13 @@ body{
     border: 1px solid #e2e2e2;
     border-top: 0px;
 }
-/*.detail-tabs1 , .detail-tabs2, .detail-tabs3{*/
-/*    width: 100%;*/
-/*    float: left;*/
-/*    padding: 60px 40px;*/
-/*    !*color: #555555;*!*/
-/*    font-size: 20px;*/
-/*}*/
+.detail-tabs1 , .detail-tabs2, .detail-tabs3{
+    width: 100%;
+    float: left;
+    padding: 60px 40px;
+    /*color: #555555;*/
+    font-size: 16px;
+}
 .detail-tabs2, .detail-tabs1{
     display: none;
 }
@@ -210,6 +211,7 @@ body{
 .detail-tabs3 h2{
     width: 100%;
     float: left;
+    font-weight: 500;
 }
 .comment{
     margin-top: 30px;
