@@ -11,14 +11,22 @@ body{
     background-color: #ffffff;
     font-family: 'Oswald', sans-serif;
 }
-.detail-section{
+.section{
     float: left;
     width: 100%;
-    padding: 100px 0;
+}
+.detail-section{
+    padding: 100px 0 20px;
 }
 .detail-container{
     width: 1100px;
     margin: 0 auto;
+}
+.detail-container::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
 }
 .detail{
     display: flex;
@@ -146,6 +154,7 @@ body{
 .box-button .btn:hover::before{
     height: 200%;
 }
+/*tabs*/
 .tabs{
     float: left;
     width: 100%;
@@ -160,6 +169,7 @@ body{
     float: left;
     width: 100%;
     border-bottom: 1px solid #e2e2e2;
+    margin-bottom: -1px;
 }
 .tabs .option-tabs ul{
     list-style: none;
@@ -177,38 +187,37 @@ body{
     border-bottom: 0px;
     transition: all ease .6s;
 }
-.tab-button:hover{
+.tab-button:hover,
+.option-tabs .active{
     border-top: 1px solid #a41a13 ;
+    border-bottom: 0px;
     color: #242424;
     background-color:#fff;
+
 }
-.detail-tabs{
+.detail-tab{
     width: 100%;
     float: left;
     border: 1px solid #e2e2e2;
     border-top: 0px;
 }
-.detail-tabs1 , .detail-tabs2, .detail-tabs3{
+.detail-tabs{
     width: 100%;
     float: left;
-    padding: 60px 40px;
-    /*color: #555555;*/
+    padding: 60px 40px 30px;
     font-size: 16px;
 }
-.detail-tabs2, .detail-tabs1{
+
+.detail-tabs{
     display: none;
 }
-.detail-tabs3{
-    width: 100%;
-    float: left;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+.detail-tab .active{
+    display: block;
 }
-.detail-tabs3 p{
+.detail-tabs p{
     color: #6c757d;
 }
-.detail-tabs3 h2{
+.detail-tabs h2{
     width: 100%;
     float: left;
     font-weight: 500;
@@ -244,40 +253,25 @@ body{
     margin-left: 5px;
     color: #a41a13;
 }
-.form-input{
-    margin-top: 50px;
-    float: left;
-    width: 100%;
-}
-.form-input::after{
+
+.detail-tabs::after{
     content: ".";
     visibility: hidden;
     display: block;
     clear: both;
 }
-.form-input .title-form{
-    float: left;
-    width: 100%;
-    border-bottom:1px solid #e2e2e2;
-}
-.form-input .title-form h2 {
-    max-width: 30%;
-    float: left;
-    word-spacing: 3px;
-    padding-bottom: 10px;
-}
-.form-input .box-rating{
-    margin-top: 30px;
+.detail-tabs .box-rating{
+    /*margin-top: 30px;*/
     float: left;
     width: 100%;
 }
-.form-input .box-rating span{
+.detail-tabs .box-rating span{
     width: 100%;
     float: left;
     color: #6c757d;
     margin-bottom: 10px;
 }
-.form-input .box-rating .a{
+.detail-tabs .box-rating .a{
     color: rgba(157, 159, 161, 0.5);
     padding-right: 15px;
     border-right:1px solid #e2e2e2;
@@ -285,29 +279,29 @@ body{
     margin-right: 15px;
     margin-top: 10px;
 }
-.form-input .box-rating .a1{
+.detail-tabs .box-rating .a1{
     border: none;
     z-index: 2;
 }
-.form-input .box-rating .a:hover{
+.detail-tabs .box-rating .a:hover{
     color: #a41a13;
 }
-.form-input .box-name{
+.detail-tabs .box-name{
     margin-top: 30px;
     float: left;
     width: 100%;
 }
-.form-input .box-name .first-name{
+.detail-tabs .box-name .first-name{
     float: left;
     width: 50%;
     padding-right: 15px;
 }
-.form-input .box-name .first-name label{
+.detail-tabs .box-name .first-name label{
     float: left;
     width: 100%;
     color: #6c757d;
 }
-.form-input .box-name .first-name input{
+.detail-tabs .box-name .first-name input{
     float: left;
     width: 100%;
     border: 1px solid #b8b0b0;
@@ -315,17 +309,17 @@ body{
     padding-left: 10px;
     margin-top: 10px;
 }
-.form-input .box-name .last-name{
+.detail-tabs .box-name .last-name{
     width: 50%;
     float: right;
     padding-left: 15px;
 }
-.form-input .box-name .last-name label{
+.detail-tabs .box-name .last-name label{
     float: left;
     width: 100%;
     color: #6c757d;
 }
-.form-input .box-name .last-name input{
+.detail-tabs .box-name .last-name input{
     float: left;
     width: 100%;
     border: 1px solid #b8b0b0;
@@ -333,17 +327,17 @@ body{
     padding-left: 10px;
     margin-top: 10px;
 }
-.form-input .email{
+.detail-tabs .email{
     margin-top: 30px;
     float: left;
     width: 100%;
 }
-.form-input .email label{
+.detail-tabs .email label{
     float: left;
     width: 100%;
     color: #6c757d;
 }
-.form-input .email input{
+.detail-tabs .email input{
     float: left;
     width: 100%;
     border: 1px solid #b8b0b0;
@@ -351,17 +345,17 @@ body{
     padding-left: 10px;
     margin-top: 10px;
 }
-.form-input .comment{
+.detail-tabs .comment{
     margin-top: 30px;
     float: left;
     width: 100%;
 }
-.form-input .comment label{
+.detail-tabs .comment label{
     float: left;
     width: 100%;
     color: #6c757d;
 }
-.form-input .comment textarea{
+.detail-tabs .comment textarea{
     float: left;
     width: 100%;
     border: 1px solid #b8b0b0;
@@ -371,13 +365,13 @@ body{
     margin-top: 10px;
     resize: none;
 }
-.form-input .comment textarea:focus,
-.form-input .email input,
-.form-input .box-name .last-name input,
-.form-input .box-name .first-name input {
+.detail-tabs .comment textarea:focus,
+.detail-tabs .email input,
+.detail-tabs .box-name .last-name input,
+.detail-tabs .box-name .first-name input {
     outline-color: #a41a13;
 }
-.form-input .form-button{
+.detail-tabs .form-button{
     margin-top: 30px;
     float: left;
     width: 20%;
@@ -385,13 +379,13 @@ body{
     background: #a41a13;
     z-index: -2;
 }
-.form-input .form-button a{
+.detail-tabs .form-button a{
     border: none;
     text-decoration: none;
     text-align: center;
     /*padding-top: 5px;*/
 }
-.form-input .form-button .btn{
+.detail-tabs .form-button .btn{
     position: relative;
     display: block;
     color: #fdf9f9;
@@ -400,7 +394,7 @@ body{
     padding: 12px 30px;
     z-index: 1;
 }
-.form-input .form-button .btn::before{
+.detail-tabs .form-button .btn::before{
     color: #fdf9f9;
     background: black;
     content: "";
@@ -414,6 +408,192 @@ body{
     border-radius: 0 0 50% 50%;
     z-index: -1;
 }
-.form-input .form-button .btn:hover::before{
+.detail-tabs .form-button .btn:hover::before{
     height: 200%; /* 100% */
+}
+
+/*similar products*/
+
+.similar-section{
+    padding-top: 50px;
+    background: #f3f3f3;
+}
+.similar-container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.similar-container .title{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.similar-container .title h1{
+    width: 100%;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+.similar-container .title h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+    width: 60px;
+    height: 3px;
+    animation-name: run;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes run{
+    0%{
+        background-color: #d3312a;
+        left: 37%;
+    }
+    25%{
+        background-color: #fcd07a;
+        left: 50%;
+    }
+    50%{
+        background-color: #d3312a;
+        left: 66%;
+    }
+    75%{
+        background-color: #fcd07a;
+        left: 50%;
+    }
+    100%{
+        background-color: #d3312a;
+        left: 37%;
+    }
+}
+.similar-container .menu{
+    width: 100%;
+    margin-top: 50px;
+}
+.similar-container .menu::after{
+    content: ".";
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+.similar-container .collum-left .dish1{
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+    height: 450px;
+}
+.similar-container .collum-left .dish2{
+    float: left;
+    width: 25%;
+    padding-left:10px;
+    padding-right:15px;
+}
+.similar-container .collum-right .dish3{
+    float: left;
+    width: 25%;
+    padding-right:10px;
+    padding-left:15px;
+}
+.similar-container .collum-right .dish4{
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+.menu img{
+    width: 100%;
+    margin-top: 5px;
+    height: 213px;
+}
+.box-dish{
+    float: left;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
+.lower-content {
+    height: 170px;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+    transition: all .6s ease;
+}
+.box-dish:hover{
+    box-shadow: 0px 33px 70px 0px rgba(0, 0, 0, 0.19);
+}
+.box-dish:hover .lower-content{
+    height: 220px;
+}
+.box-dish:hover .button-buy{
+    opacity: 1;
+}
+.lower-content h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.lower-content p{
+    font-size: 18px;
+    color: #797979;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+/*fix*/
+.lower-content .price{
+    font-size: 22px;
+    color: #a41a13;
+    font-weight: 800;
+    text-align: center;
+}
+.lower-content .button-buy{
+    position: absolute;
+    bottom: 0px;
+    left: 47px;
+    height: 40px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+.lower-content .button-buy .box-button-buy{
+    background: #a41a13;
+    width:160px;
+    height: 40px;
+    border-radius:5px 5px  0 0;
+    z-index: -2;
+}
+.lower-content .button-buy .box-button-buy a{
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.effect{
+    border-radius:5px 5px  0 0;
+    position: relative;
+    display: block;
+    color: #fdf9f9;
+    overflow: hidden;
+    z-index: 1;
+}
+.effect::before{
+    background: black;
+    content: "";
+    width: 100%;
+    height: 0%;
+    transition: all .6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 50% 50%;
+    z-index: -1;
+}
+.effect:hover::before{
+    height: 200%;
 }
