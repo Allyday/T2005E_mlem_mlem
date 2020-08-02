@@ -1,0 +1,152 @@
+body{
+    font-size:16px;
+    font-family: 'Merriweather', serif;
+    color: #242424;
+}
+.section-tittle{
+    width: 100%;
+    float: left;
+    background-color: #eeeeee;
+    border-bottom: 1px solid #dedede;
+}
+.container{
+    width: 1200px;
+    float: left;
+    padding: 10px 30px;
+}
+.container a, p{
+    color: rgb(48, 56, 65);
+    float: left;
+}
+.container a{
+    margin-right: 10px;
+}
+.container a:hover{
+    color: #a41a13 ;
+}
+.section{
+    background-color: #f5f5f5;
+}
+.a{
+    float: left;
+    width: 100%;
+}
+.content{
+    padding-right: 15px;
+}
+.content .table{
+    border: 1px solid #dedede ;
+}
+.content .table thead{
+    font-size: 18px;
+    background-color: #eeeeee;
+}
+.content .table thead th{
+    font-weight: 700;
+}
+.content .table tbody td img{
+    max-width: 70px;
+}
+.content .table tbody td input{
+    border: 1px solid #000000;
+    width: 40px;
+    height: 30px;
+}
+.content .table tbody td button,
+.content .table tbody td button:active{
+    height: 30px;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 0;
+    background-color: #a41a13;
+    color: white;
+    border: none;
+    outline: none;
+}
+.content .table tbody td button:hover{
+    background-color: #323232;
+}
+.container .aside{
+    border: 1px solid #dedede ;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+.aside .tittle{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+    overflow: hidden;
+}
+#color{
+    height: 2px;
+    width: 50%;
+    background-color: #a41a13;
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+}
+.aside .coupon,
+.aside .gift{
+    margin-bottom: 20px;
+    padding-bottom:15px ;
+}
+.aside .coupon a,
+.aside .gift a{
+    font-weight:700;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.aside .coupon a:hover p,
+.aside .gift a:hover p{
+    color: #a41a13;
+}
+.aside .coupon a i,
+.aside .gift a i{
+    float: right;
+}
+.aside .coupon a:focus i,
+.aside .gift a:focus i{
+    transform: rotate(90deg);
+}
+.aside .fix{
+    display: none;
+}
+.aside .coupon .fix form input,
+.aside .gift .fix form input{
+    outline: none;
+    border:1px solid #dedede;
+    padding: 5px;
+}
+.aside .coupon .fix form input:hover,
+.aside .coupon .fix form input:focus ,
+.aside .gift .fix form input:hover,
+.aside .gift .fix form input:focus {
+    border: 1px solid #fcd07a;
+}
+.aside .coupon .fix form button,
+.aside .gift .fix form button{
+    background-color: #a41a13;
+    color: #fff;
+    outline: none;
+}
+.aside .coupon .fix form button:hover,
+.aside .gift .fix form button:hover{
+    background-color: #323232;
+}
+
+
+.aside .table{
+    background-color: #FFFFFF;
+}
+.aside .buton{
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #dedede;
+}
+.aside .buton .shopping{
+    float: left;
+}
+.aside .buton .checkout{
+    float: right;
+}
