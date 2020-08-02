@@ -14,11 +14,12 @@ body {
     margin: auto;
 }
 .head{
-    width: 80%;
-    background-image: url("../imgs/7D9E019E-2449-4383-9879-86E5F459D37F.jpeg");
-    height: 300px;
+    width: 100%;
+    background-image: url("../IMGs/7D9E019E-2449-4383-9879-86E5F459D37F.jpeg");
+    height: 350px;
     float: none;
     margin: auto;
+    background-size: cover;
 
 }
 .head a{
@@ -29,7 +30,8 @@ body {
     color: #FFFFFF;
 }
 #head1{
-    text-align: center;
+    margin-left: 50px;
+    margin-top: -50px;
     width: 100%;
     height: 200px;
 }
@@ -42,12 +44,13 @@ body {
     margin-left: 18%;
 }
 .menu{
-    margin-left: 130px;
+    margin-top: 60px;
+    margin-left: 180px;
     text-align: center;
 }
 .menu li{
     /*margin-left: 20px;*/
-    padding: 10px;
+    padding: 30px;
     display: block;
     float: left;
 }
@@ -56,7 +59,7 @@ body {
     z-index: -1;
     background-color: white;
     width: 100%;
-    height:1800px;
+    height:1600px;
     position: absolute;
     margin-left: calc(600px - 50%);
     margin-top: -80px;
@@ -64,21 +67,19 @@ body {
 }
 .about{
     width: 80%;
-    height: 100%;
     margin: auto;
 }
 p#tieudephu{
-    font-size: 14px;
+    font-size: 20px;
     display: block;
     width: 100%;
     /*margin-top: 20px;*/
     text-align: center;
-    font-family: Merriweather, serif;;
+    font-family: Merriweather;
     color: #888;
-    font-weight: 200;
 }
 h3{
-
+    font-size: 40px;
     width: 100%;
     text-align: center;
 
@@ -86,8 +87,8 @@ h3{
 .tieude{
     margin-top: -50px;
     text-align: center;
-    font-family: Oswald,sans-serif;
-    font-size: 45px;
+    font-family: Oswald;
+    font-size: 50px;
 }
 .content{
     float: none;
@@ -96,7 +97,7 @@ h3{
     margin: auto;
 }
 .content_1{
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 50px ;
     padding: 10px;
     float: left;
@@ -106,8 +107,8 @@ h3{
 .tieude1{
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-    padding-top: 30px;
-    margin: auto;
+    padding-top: 20px;
+    margin-top:-20px
 }
 .content_1 span.firt{
     float: left;
@@ -119,6 +120,96 @@ h3{
     font-weight: 200;
     margin-top: 10px;
 }
+
+
+.head a:hover{
+    transition: 0.3s;
+    margin-top: 10px;
+    color: #FCD07A;
+}
+.member_1{
+    position: relative;
+    width: 240px;
+    height: 463px;
+    padding: 20px;
+    float: left;
+}
+.member_2{
+    position: relative;
+    width: 240px;
+    height: 463px;
+    padding: 20px;
+    float: left;
+}
+.member_3{
+    position: relative;
+    width: 240px;
+    height: 463px;
+    padding: 20px;
+    float: left;
+}
+.member_4{
+    position: relative;
+    width: 240px;
+    height: 463px;
+    padding: 20px;
+    float: left;
+}
+
+.IMGs {
+    margin-left:50px;
+    margin-top: 800px;
+    float: left;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(30, 30, 30,0.9);
+}
+
+.member_1:hover .text {
+    opacity: 1;
+}
+.member_2:hover .text {
+    opacity: 1;
+}
+.member_3:hover .text {
+    opacity: 1;
+}
+.member_4:hover .text {
+    opacity: 1;
+}
+
+.text p{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Cabin', sans-serif;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text u{
+    text-decoration: none;
+    font-size: 40px;
+}
+.bot{
+    width: 100%;
+    margin-left:170px;
+    margin-top: 1500px;
+}
 .slogan img{
     float: left;
 }
@@ -127,47 +218,7 @@ h1#slogan1{
     font-family: 'Merriweather', serif;
     font-size: 30px;
 }
-a:hover{
-    transition: 0.3s;
-    margin-top: 10px;
-    color: #FCD07A;
-}
-.IMGs{
-    margin-left: 40px;
-    padding: 5px;
-}
-.member_1{
-    overflow: hidden;
-    /*box-shadow :0 0 10px 0 rgba(0,0,0,.15); !* (a  +  .15) làm mở bớt màu đổ bóng*!*/
-    text-align: center;
-    display: block;
-    width: 240px;
-    height: 463px;
-    padding: 20px;
-    float: left;
-    border-right: 1px solid white;
-    z-index: 1;
-}
-.team2{
-    margin-left: 130px;
-    width: 100%;
-}
-.member_1 p{
-    background-color: rgba(0,0,0,0.7);
-}
-.member_1:hover {
-    background-color: black;
-    top:50px;
-    transition: 2s;
-}
-
-.bot{
-    width: 100%;
-    margin-left:170px;
-    margin-top: 1700px;
-}
 .bot p{
-
     font-family: 'Merriweather', serif;
     font-size: 30px;
 }
