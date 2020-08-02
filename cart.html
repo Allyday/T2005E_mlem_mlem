@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="lbs/boostrap_3.3.7/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lbs/fontawesome/css/all.css"/>
+    <link rel="icon" href="data/images/burger-icon-colored.svg"/>
+</head>
+<body>
+<div class="section-tittle">
+    <div class="container">
+        <a href="#"><i class="fas fa-home"></i></a><p> / Shopping Cart </p>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="content col-md-8">
+                <form action="#" method="get">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <th class="text-center">Image</th>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Quantity</th>
+                            <th class="text-center">Unit price</th>
+                            <th class="text-center"> Total </th>
+                        </thead>
+                        <tbody class="text-center" >
+                            <tr>
+                                <td><img src="imgs/pizza3.jpg"></td>
+                                <td>Pizza</td>
+                                <td>
+                                    <input type="number" name="quantity" value="1" min="1" max="10" style="text-align: center"/>
+                                    <button class="btn" type="button" title="Update"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn" type="button" title="Remove"><i class="fas fa-times"></i></button>
+                                </td>
+                                <td>$50</td>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <td><img src="imgs/hotdog525.jpg"></td>
+                                <td>Hotdog</td>
+                                <td>
+                                    <input type="number" name="quantity" value="3" min="1" max="10" style="text-align: center"/>
+                                    <button class="btn" type="button" title="Update"><i class="fas fa-sync-alt"></i></button>
+                                    <button class="btn" type="button" title="Remove"><i class="fas fa-times"></i></button>
+                                </td>
+                                <td>$12.00</td>
+                                <td>$36.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <aside class="aside col-md-4" onmouseenter="enter()" onmouseleave="leave()">
+                <div class="tittle">
+                    WHAT WOULD YOU LIKE TO DO NEXT ?
+                    <div id="color"></div>
+                </div>
+                <div class="coupon">
+                    <a class="tab" href="#" onclick="btncoupon(), nghich(this)">
+                        <p>USE COUPON CODE</p>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="fix" id="coupon">
+                        <p>Enter your coupon here</p>
+                        <form action="#" method="get">
+                            <input type="text" name="coupon" placeholder="Enter your coupon here"/>
+                            <button type="button" class="btn ">Apply</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="gift">
+                    <a class="tab" href="#" onclick="btngift()"><p>USE GIFT CERTIFICATE</p><i class="fas fa-arrow-right"></i></a>
+                <div class="fix" id="gift">
+                        <p>Enter your gift certificate code here</p>
+                        <form action="#" method="get">
+                            <input type="text" name="gift" placeholder="Enter your gift code"/>
+                            <button type="button" class="btn">Apply</button>
+                        </form>
+                    </div>
+                </div>
+                <table class="table">
+                    <tbody >
+                        <tr>
+                            <td>Sub-total:</td>
+                            <td class="text-right">$86</td>
+                        </tr>
+                        <tr>
+                            <td>Service (50%):</td>
+                            <td class="text-right">$43</td>
+                        </tr>
+                        <tr>
+                            <td>VAT (10%):</td>
+                            <td class="text-right">$8,6</td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td class="text-right">$137,6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buton">
+                    <button type="button" href="#" class="shopping btn btn-success"><i class="fas fa-arrow-left"></i>&ensp;SHOPPING</button>
+                    <button type="button" href="#" class="checkout btn btn-info">CHECKOUT &ensp;<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/anime.min.js"></script>
+<script type="text/javascript">
+    function btncoupon(){
+        let m =$("#coupon");
+        m.slideToggle(500);
+    }
+    function btngift(){
+        let n =$("#gift");
+        n.slideToggle(500);
+    }
+    function enter() {
+      anime({
+          targets:'#color',
+          duration:1000,
+          translateX:300,
+      });
+    }
+    function leave() {
+        anime({
+            targets:'#color',
+            duration:1000,
+            translateX:0,
+        });
+    }
+</script>
+
+</body>
+</html>
