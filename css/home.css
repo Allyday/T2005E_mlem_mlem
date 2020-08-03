@@ -24,7 +24,7 @@ body {
 #landing {
   background-image: url("../data/images/burger-header.jpg");
   background-size: cover;
-  height: 990px;
+  max-height: 855px;
   float: none;
   margin: auto;
 }
