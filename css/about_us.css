@@ -1,4 +1,4 @@
-body {
+body{
     height: 2000px;
     background-image: url('https://dummyimage.com/600x400/fac65f/fac65f.png');
     margin: 0;
@@ -20,7 +20,6 @@ body {
     float: none;
     margin: auto;
     background-size: cover;
-
 }
 .head a{
     text-shadow: 5px 3px 5px;
@@ -37,11 +36,6 @@ body {
 }
 #head1 a{
     padding: 100px;
-
-}
-#head2{
-    width: 100%;
-    margin-left: 18%;
 }
 .menu{
     margin-top: 60px;
@@ -49,10 +43,14 @@ body {
     text-align: center;
 }
 .menu li{
-    /*margin-left: 20px;*/
     padding: 30px;
     display: block;
     float: left;
+}
+.head a:hover{
+    transition: 0.3s;
+    margin-top: 10px;
+    color: #FCD07A;
 }
 /* phần thân*/
 .mid{
@@ -122,11 +120,7 @@ h3{
 }
 
 
-.head a:hover{
-    transition: 0.3s;
-    margin-top: 10px;
-    color: #FCD07A;
-}
+
 .member_1{
     position: relative;
     width: 240px;
@@ -173,7 +167,7 @@ h3{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(30, 30, 30,0.9);
+    background-color: rgba(30, 30, 30, 0.75);
 }
 
 .member_1:hover .text {
