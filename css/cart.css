@@ -1,8 +1,56 @@
 body{
+    /*background-image: url('https://dummyimage.com/600x400/fac65f/fac65f.png');*/
     font-size:16px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
     color: #242424;
 }
+/*body{*/
+/*    height: 2000px;*/
+/*    margin: 0;*/
+/*}*/
+/*header*/
+.head{
+    width: 90%;
+    background-image: url("../IMGs/7D9E019E-2449-4383-9879-86E5F459D37F.jpeg");
+    height: 350px;
+    float: none;
+    margin: auto;
+    background-size: cover;
+}
+.head a{
+    text-shadow: 5px 3px 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#head1{
+    margin-left: 50px;
+    margin-top: -50px;
+    width: 100%;
+    height: 200px;
+}
+#head1 a{
+    padding: 100px;
+
+}
+.menu{
+    margin-top: 60px;
+    margin-left: 180px;
+    text-align: center;
+}
+.menu li{
+    padding: 30px;
+    display: block;
+    float: left;
+}
+.head a:hover{
+    transition: 0.3s;
+    margin-top: 10px;
+    color: #FCD07A;
+}
+
+/*body*/
 .section-tittle{
     width: 100%;
     float: left;
@@ -10,6 +58,7 @@ body{
     border-bottom: 1px solid #dedede;
 }
 .container{
+    /*background-color: #eeeeee;*/
     width: 1200px;
     float: left;
     padding: 10px 30px;
@@ -89,7 +138,7 @@ body{
 .aside .coupon,
 .aside .gift{
     margin-bottom: 20px;
-    padding-bottom:15px ;
+    padding-bottom:15px;
 }
 .aside .coupon a,
 .aside .gift a{
@@ -105,8 +154,8 @@ body{
 .aside .gift a i{
     float: right;
 }
-.aside .coupon a:focus i,
-.aside .gift a:focus i{
+.aside .coupon:hover i,
+.aside .gift:hover i{
     transform: rotate(90deg);
 }
 .aside .fix{
@@ -134,8 +183,6 @@ body{
 .aside .gift .fix form button:hover{
     background-color: #323232;
 }
-
-
 .aside .table{
     background-color: #FFFFFF;
 }
