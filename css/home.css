@@ -46,12 +46,21 @@ h1#intro-title {
 
 #main-menu {
   height: 855px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 600px;
 }
 
 .navigation-menu {
-  font-size: 36px;
+  font-size: 40px;
+  color: white;
+  line-height: 1.7;
+}
+
+.navigation-menu:hover {
   color: #fcd07a;
-  line-height: 1.4;
 }
 
 #photos {
