@@ -24,7 +24,7 @@ body {
 #landing {
   background-image: url("../data/images/burger-header.jpg");
   background-size: cover;
-  max-height: 855px;
+  height: 855px;
   float: none;
   margin: auto;
 }
@@ -40,7 +40,30 @@ h1#intro-title {
 
 #intro-content {
   color: #888;
+  font-size: 18px;
   font-weight: 300;
+}
+
+#main-menu {
+  height: 855px;
+}
+
+.navigation-menu {
+  font-size: 36px;
+  color: #fcd07a;
+  line-height: 1.4;
+}
+
+#photos {
+  width: 100%;
+  height: 500px;
+}
+
+#big-burger {
+  background-image: url(https://demo.myherothemes.com/burgy/wp-content/uploads/sites/22/2015/06/burger1.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 460px;
 }
 
 .center-content {
