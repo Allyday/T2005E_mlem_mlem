@@ -3,6 +3,12 @@ body {
   margin: 0;
 }
 
+#logo {
+  width: 350px;
+  margin-bottom: 50px;
+  margin-top: -200px;
+}
+
 #white-bit {
   z-index: -1;
   background-color: white;
@@ -63,6 +69,10 @@ h1#intro-title {
   color: #fcd07a;
 }
 
+#home-link {
+  color: #fcd07a;
+}
+
 #photos {
   width: 100%;
   height: 500px;
@@ -75,7 +85,11 @@ h1#intro-title {
   height: 460px;
 }
 
-.preview-menu {}
+.preview-menu {
+  margin-top: 20px;
+  width: 105%;
+
+}
 
 .center-content {
   text-align: center;
